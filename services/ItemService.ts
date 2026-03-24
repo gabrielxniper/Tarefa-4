@@ -9,7 +9,7 @@ class ItemService {
     this.items = this.items.filter((item) => item.id !== id);
   }
   getAllItems(): Item[] {
-    return this.items;
+    return [...this.items];
   }
 
   addItem(name: string, imageUrl: string): void {
